@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import store from '@/stores'
+import AccountExplorer from '@/components/AccountExplorer.vue'
 
 const routes = [
   {
@@ -43,6 +44,11 @@ const routes = [
     name: 'Dompetku',
     component: () => import('@/components/PersonalFinanceTracker.vue'),
     meta: { requiresAuth: true },
+  },
+  {
+    path: '/accounts-list',
+    name: 'accounts-list',
+    component: () => import('@/components/AccountExplorer.vue'),
   },
 ]
 

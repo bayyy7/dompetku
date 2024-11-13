@@ -27,8 +27,7 @@ api.interceptors.response.use(
 )
 
 export const authService = {
-  login: (username, password) =>
-    api.post('/auth/login', { username: username, password: password }),
+  login: (username, password) => api.post('/auth/login', { username, password }),
   getUserInfo: () => api.get('/auth/user'),
   changePassword: (id, username, newPassword) =>
     api.post('/auth/upsert', { id, username, newPassword }),
