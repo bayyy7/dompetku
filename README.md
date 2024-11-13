@@ -1,6 +1,6 @@
 # Dompetku
 
-An implementation of Vue.js for Finance UI and combination of Golang in the backend
+An implementation of Vue.js + Vuetify for Finance UI and combination of Golang in the backend
 
 ## Project Setup
 

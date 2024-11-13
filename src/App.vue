@@ -1,18 +1,11 @@
+<script setup>
+import { RouterView } from 'vue-router'
+</script>
+
 <template>
-  <v-app>
-    <v-main>
-      <PersonalFinanceTracker />
-    </v-main>
-  </v-app>
+  <component :is="$route.meta.layout || 'div'">
+    <RouterView />
+  </component>
 </template>
 
-<script>
-import PersonalFinanceTracker from './components/PersonalFinanceTracker.vue'
-
-export default {
-  name: 'App',
-  components: {
-    PersonalFinanceTracker,
-  },
-}
-</script>
+<style scoped></style>
